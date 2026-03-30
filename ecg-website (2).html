@@ -1,3 +1,6 @@
+
+Copy
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,22 +26,22 @@
     --border: rgba(29,43,73,0.12);
     --border-gold: rgba(196,160,0,0.3);
   }
-
+ 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     font-family: 'Montserrat', sans-serif;
     background: var(--bg);
     color: var(--text-dark);
     overflow-x: hidden;
   }
-
+ 
   /* ── PAGE SYSTEM ── */
   .page { display: none; }
   .page.active { display: block; }
-
+ 
   /* ── NAV ── */
   nav {
     position: fixed;
@@ -52,7 +55,7 @@
     align-items: center;
     justify-content: space-between;
   }
-
+ 
   .nav-brand {
     display: flex;
     align-items: center;
@@ -60,7 +63,7 @@
     cursor: pointer;
     text-decoration: none;
   }
-
+ 
   .nav-logo-mark {
     width: 38px;
     height: 38px;
@@ -74,13 +77,13 @@
     letter-spacing: -0.5px;
     flex-shrink: 0;
   }
-
+ 
   .nav-brand-text {
     display: flex;
     flex-direction: column;
     line-height: 1;
   }
-
+ 
   .nav-brand-text strong {
     font-size: 11px;
     font-weight: 800;
@@ -88,7 +91,7 @@
     letter-spacing: 0.12em;
     text-transform: uppercase;
   }
-
+ 
   .nav-brand-text span {
     font-size: 9px;
     font-weight: 400;
@@ -97,14 +100,14 @@
     margin-top: 3px;
     text-transform: uppercase;
   }
-
+ 
   .nav-links {
     display: flex;
     align-items: center;
     gap: 32px;
     list-style: none;
   }
-
+ 
   .nav-links li a, .nav-links li button {
     font-size: 10.5px;
     font-weight: 600;
@@ -120,13 +123,13 @@
     padding: 4px 0;
     position: relative;
   }
-
+ 
   .nav-links li a:hover, .nav-links li button:hover { color: #fff; }
-
+ 
   .nav-links li button.active {
     color: var(--gold);
   }
-
+ 
   .nav-links li button.active::after {
     content: '';
     position: absolute;
@@ -135,13 +138,13 @@
     height: 1px;
     background: var(--gold);
   }
-
+ 
   .nav-cta {
     display: flex;
     align-items: center;
     gap: 12px;
   }
-
+ 
   .btn-login {
     font-size: 10px;
     font-weight: 700;
@@ -153,12 +156,12 @@
     padding: 7px 16px;
     transition: all 0.2s;
   }
-
+ 
   .btn-login:hover {
     color: #fff;
     border-color: rgba(255,255,255,0.5);
   }
-
+ 
   .btn-schedule {
     font-size: 10px;
     font-weight: 700;
@@ -170,9 +173,9 @@
     padding: 8px 18px;
     transition: background 0.2s;
   }
-
+ 
   .btn-schedule:hover { background: var(--gold-light); }
-
+ 
   /* ── HERO ── */
   .hero {
     min-height: 100vh;
@@ -183,7 +186,7 @@
     overflow: hidden;
     padding-top: 68px;
   }
-
+ 
   .hero-grid {
     position: absolute;
     inset: 0;
@@ -192,14 +195,14 @@
       linear-gradient(90deg, rgba(196,160,0,0.04) 1px, transparent 1px);
     background-size: 60px 60px;
   }
-
+ 
   .hero-gradient {
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse 70% 60% at 60% 50%, rgba(46,139,87,0.08) 0%, transparent 70%),
                 radial-gradient(ellipse 40% 50% at 10% 80%, rgba(196,160,0,0.06) 0%, transparent 60%);
   }
-
+ 
   .hero-accent-line {
     position: absolute;
     left: 0;
@@ -209,7 +212,7 @@
     background: linear-gradient(to bottom, transparent, var(--gold), transparent);
     opacity: 0.6;
   }
-
+ 
   .hero-content {
     position: relative;
     z-index: 2;
@@ -222,20 +225,20 @@
     align-items: center;
     width: 100%;
   }
-
+ 
   .hero-eyebrow {
     display: inline-flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 28px;
   }
-
+ 
   .hero-eyebrow-line {
     width: 32px;
     height: 1px;
     background: var(--gold);
   }
-
+ 
   .hero-eyebrow span {
     font-size: 10px;
     font-weight: 700;
@@ -243,7 +246,7 @@
     text-transform: uppercase;
     color: var(--gold);
   }
-
+ 
   .hero-headline {
     font-family: 'Cormorant Garamond', serif;
     font-size: 64px;
@@ -253,12 +256,12 @@
     margin-bottom: 12px;
     letter-spacing: -0.5px;
   }
-
+ 
   .hero-headline em {
     font-style: italic;
     color: var(--gold);
   }
-
+ 
   .hero-subhead {
     font-size: 12px;
     font-weight: 700;
@@ -267,7 +270,7 @@
     color: var(--teal);
     margin-bottom: 28px;
   }
-
+ 
   .hero-body {
     font-size: 15px;
     font-weight: 400;
@@ -276,13 +279,13 @@
     max-width: 520px;
     margin-bottom: 40px;
   }
-
+ 
   .hero-actions {
     display: flex;
     gap: 14px;
     flex-wrap: wrap;
   }
-
+ 
   .btn-primary {
     background: var(--gold);
     color: var(--navy-deep);
@@ -298,9 +301,9 @@
     transition: background 0.2s;
     display: inline-block;
   }
-
+ 
   .btn-primary:hover { background: var(--gold-light); }
-
+ 
   .btn-outline {
     background: transparent;
     color: rgba(255,255,255,0.7);
@@ -316,12 +319,12 @@
     transition: all 0.2s;
     display: inline-block;
   }
-
+ 
   .btn-outline:hover {
     border-color: rgba(255,255,255,0.6);
     color: #fff;
   }
-
+ 
   /* Hero card */
   .hero-card {
     background: rgba(255,255,255,0.04);
@@ -329,7 +332,7 @@
     padding: 36px;
     position: relative;
   }
-
+ 
   .hero-card::before {
     content: '';
     position: absolute;
@@ -337,7 +340,7 @@
     width: 40px; height: 3px;
     background: var(--gold);
   }
-
+ 
   .hero-card-label {
     font-size: 9px;
     font-weight: 700;
@@ -346,19 +349,19 @@
     color: var(--gold);
     margin-bottom: 20px;
   }
-
+ 
   .hero-stat {
     margin-bottom: 22px;
     padding-bottom: 22px;
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
-
+ 
   .hero-stat:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
   }
-
+ 
   .hero-stat-num {
     font-family: 'Cormorant Garamond', serif;
     font-size: 36px;
@@ -367,7 +370,7 @@
     line-height: 1;
     margin-bottom: 4px;
   }
-
+ 
   .hero-stat-label {
     font-size: 10px;
     font-weight: 500;
@@ -375,34 +378,34 @@
     letter-spacing: 0.06em;
     line-height: 1.5;
   }
-
+ 
   .hero-stat-accent { color: var(--gold); }
   .hero-stat-teal { color: var(--teal); }
-
+ 
   /* ── SECTION SHARED ── */
   section {
     padding: 100px 0;
   }
-
+ 
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 48px;
   }
-
+ 
   .section-eyebrow {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-bottom: 16px;
   }
-
+ 
   .section-eyebrow-line {
     width: 28px;
     height: 1px;
     background: var(--gold);
   }
-
+ 
   .section-eyebrow span {
     font-size: 10px;
     font-weight: 700;
@@ -410,7 +413,7 @@
     text-transform: uppercase;
     color: var(--gold);
   }
-
+ 
   .section-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 42px;
@@ -420,9 +423,9 @@
     margin-bottom: 18px;
     letter-spacing: -0.3px;
   }
-
+ 
   .section-title.light { color: #ffffff; }
-
+ 
   .section-body {
     font-size: 14px;
     font-weight: 400;
@@ -430,9 +433,9 @@
     line-height: 1.85;
     max-width: 600px;
   }
-
+ 
   .section-body.light { color: rgba(255,255,255,0.55); }
-
+ 
   /* ── MARQUEE / CREDIBILITY STRIP ── */
   .credibility-strip {
     background: var(--navy);
@@ -441,14 +444,14 @@
     border-top: 1px solid rgba(196,160,0,0.15);
     border-bottom: 1px solid rgba(196,160,0,0.15);
   }
-
+ 
   .marquee-track {
     display: flex;
     gap: 60px;
     animation: marquee 20s linear infinite;
     white-space: nowrap;
   }
-
+ 
   .marquee-item {
     font-size: 10px;
     font-weight: 700;
@@ -460,18 +463,18 @@
     align-items: center;
     gap: 16px;
   }
-
+ 
   .marquee-item::before {
     content: '◆';
     color: var(--gold);
     font-size: 7px;
   }
-
+ 
   @keyframes marquee {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
-
+ 
   /* ── VALUE PROPS ── */
   .value-grid {
     display: grid;
@@ -480,16 +483,16 @@
     background: var(--border);
     margin-top: 60px;
   }
-
+ 
   .value-card {
     background: var(--bg-white);
     padding: 40px 36px;
     position: relative;
     transition: background 0.2s;
   }
-
+ 
   .value-card:hover { background: #fafafa; }
-
+ 
   .value-card-num {
     font-family: 'Cormorant Garamond', serif;
     font-size: 52px;
@@ -499,7 +502,7 @@
     margin-bottom: 16px;
     letter-spacing: -2px;
   }
-
+ 
   .value-card-title {
     font-size: 13px;
     font-weight: 700;
@@ -508,14 +511,14 @@
     margin-bottom: 12px;
     text-transform: uppercase;
   }
-
+ 
   .value-card-body {
     font-size: 13px;
     font-weight: 400;
     color: var(--text-mid);
     line-height: 1.75;
   }
-
+ 
   .value-card-accent {
     position: absolute;
     top: 0; left: 0;
@@ -523,14 +526,14 @@
     height: 40px;
     background: var(--gold);
   }
-
+ 
   /* ── SERVICES ── */
   .services-bg {
     background: var(--navy);
     position: relative;
     overflow: hidden;
   }
-
+ 
   .services-bg::before {
     content: '';
     position: absolute;
@@ -540,7 +543,7 @@
       linear-gradient(90deg, rgba(196,160,0,0.03) 1px, transparent 1px);
     background-size: 48px 48px;
   }
-
+ 
   .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -548,7 +551,7 @@
     margin-top: 60px;
     position: relative;
   }
-
+ 
   .service-card {
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(255,255,255,0.08);
@@ -556,12 +559,12 @@
     position: relative;
     transition: border-color 0.25s, background 0.25s;
   }
-
+ 
   .service-card:hover {
     border-color: rgba(196,160,0,0.3);
     background: rgba(255,255,255,0.06);
   }
-
+ 
   .service-card::before {
     content: '';
     position: absolute;
@@ -571,9 +574,9 @@
     background: var(--gold);
     transition: height 0.3s;
   }
-
+ 
   .service-card:hover::before { height: 100%; }
-
+ 
   .service-type {
     font-size: 9px;
     font-weight: 700;
@@ -582,7 +585,7 @@
     color: var(--gold);
     margin-bottom: 16px;
   }
-
+ 
   .service-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 26px;
@@ -591,7 +594,7 @@
     line-height: 1.2;
     margin-bottom: 16px;
   }
-
+ 
   .service-body {
     font-size: 12.5px;
     font-weight: 400;
@@ -599,14 +602,14 @@
     line-height: 1.8;
     margin-bottom: 24px;
   }
-
+ 
   .service-deliverables {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 8px;
   }
-
+ 
   .service-deliverables li {
     font-size: 11px;
     font-weight: 500;
@@ -616,13 +619,13 @@
     align-items: flex-start;
     gap: 8px;
   }
-
+ 
   .service-deliverables li::before {
     content: '—';
     color: var(--teal);
     flex-shrink: 0;
   }
-
+ 
   /* ── ABOUT PAGE ── */
   .about-split {
     display: grid;
@@ -630,7 +633,7 @@
     gap: 80px;
     align-items: start;
   }
-
+ 
   .about-statement {
     font-family: 'Cormorant Garamond', serif;
     font-size: 32px;
@@ -642,14 +645,14 @@
     padding-left: 24px;
     margin: 40px 0;
   }
-
+ 
   .about-pillar {
     padding: 24px 0;
     border-bottom: 1px solid var(--border);
   }
-
+ 
   .about-pillar:first-child { border-top: 1px solid var(--border); }
-
+ 
   .about-pillar-title {
     font-size: 11px;
     font-weight: 700;
@@ -658,13 +661,13 @@
     color: var(--navy);
     margin-bottom: 8px;
   }
-
+ 
   .about-pillar-body {
     font-size: 13px;
     color: var(--text-mid);
     line-height: 1.75;
   }
-
+ 
   .team-card {
     background: var(--bg-white);
     border: 1px solid var(--border);
@@ -672,7 +675,7 @@
     margin-bottom: 16px;
     position: relative;
   }
-
+ 
   .team-card::before {
     content: '';
     position: absolute;
@@ -680,14 +683,14 @@
     width: 3px; height: 100%;
     background: var(--teal);
   }
-
+ 
   .team-name {
     font-size: 14px;
     font-weight: 700;
     color: var(--navy);
     margin-bottom: 3px;
   }
-
+ 
   .team-title {
     font-size: 10px;
     font-weight: 600;
@@ -696,13 +699,13 @@
     color: var(--gold);
     margin-bottom: 10px;
   }
-
+ 
   .team-bg {
     font-size: 12px;
     color: var(--text-mid);
     line-height: 1.6;
   }
-
+ 
   /* ── COPILOT / OSI PAGE ── */
   .copilot-hero {
     background: var(--navy-deep);
@@ -710,7 +713,7 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .copilot-hero::before {
     content: '';
     position: absolute;
@@ -720,14 +723,14 @@
       linear-gradient(90deg, rgba(196,160,0,0.04) 1px, transparent 1px);
     background-size: 48px 48px;
   }
-
+ 
   .instruments-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 16px;
     margin-top: 60px;
   }
-
+ 
   .instrument-card {
     background: var(--bg-white);
     border: 1px solid var(--border);
@@ -737,12 +740,12 @@
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
   }
-
+ 
   .instrument-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 12px 40px rgba(29,43,73,0.12);
   }
-
+ 
   .instrument-card::before {
     content: '';
     position: absolute;
@@ -750,7 +753,7 @@
     height: 3px;
     background: var(--gold);
   }
-
+ 
   .instrument-abbr {
     font-family: 'Cormorant Garamond', serif;
     font-size: 22px;
@@ -758,7 +761,7 @@
     color: var(--navy);
     margin-bottom: 6px;
   }
-
+ 
   .instrument-full {
     font-size: 9.5px;
     font-weight: 700;
@@ -767,7 +770,7 @@
     text-transform: uppercase;
     line-height: 1.4;
   }
-
+ 
   .flow-diagram {
     background: var(--bg-white);
     border: 1px solid var(--border);
@@ -775,7 +778,7 @@
     margin-top: 60px;
     position: relative;
   }
-
+ 
   .flow-diagram::before {
     content: 'DIAGNOSTIC FLOW';
     position: absolute;
@@ -785,20 +788,20 @@
     letter-spacing: 0.2em;
     color: var(--text-light);
   }
-
+ 
   .flow-steps {
     display: flex;
     align-items: center;
     gap: 0;
     margin-top: 16px;
   }
-
+ 
   .flow-step {
     flex: 1;
     text-align: center;
     position: relative;
   }
-
+ 
   .flow-step-box {
     background: var(--navy);
     color: white;
@@ -809,10 +812,10 @@
     text-align: center;
     line-height: 1.4;
   }
-
+ 
   .flow-step-box.teal { background: var(--teal); }
   .flow-step-box.gold { background: var(--gold); color: var(--navy-deep); }
-
+ 
   .flow-arrow {
     width: 28px;
     flex-shrink: 0;
@@ -820,7 +823,7 @@
     color: var(--gold);
     font-size: 16px;
   }
-
+ 
   .flow-note {
     font-size: 9px;
     color: var(--text-light);
@@ -828,19 +831,19 @@
     margin-top: 8px;
     letter-spacing: 0.06em;
   }
-
+ 
   /* ── PARTNERS PAGE ── */
   .partner-tier {
     margin-bottom: 60px;
   }
-
+ 
   .partner-tier-header {
     display: flex;
     align-items: center;
     gap: 16px;
     margin-bottom: 24px;
   }
-
+ 
   .partner-tier-badge {
     font-size: 9px;
     font-weight: 700;
@@ -850,25 +853,25 @@
     background: var(--navy);
     color: var(--gold);
   }
-
+ 
   .partner-tier-label {
     font-size: 18px;
     font-weight: 700;
     color: var(--navy);
   }
-
+ 
   .partner-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1px;
     background: var(--border);
   }
-
+ 
   .partner-card {
     background: var(--bg-white);
     padding: 28px 24px;
   }
-
+ 
   .partner-card-title {
     font-size: 11px;
     font-weight: 700;
@@ -877,13 +880,13 @@
     letter-spacing: 0.06em;
     margin-bottom: 8px;
   }
-
+ 
   .partner-card-body {
     font-size: 12px;
     color: var(--text-mid);
     line-height: 1.65;
   }
-
+ 
   .referral-block {
     background: var(--navy);
     padding: 48px;
@@ -893,7 +896,7 @@
     align-items: center;
     margin-top: 60px;
   }
-
+ 
   .referral-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
@@ -901,14 +904,14 @@
     color: #fff;
     margin-bottom: 10px;
   }
-
+ 
   .referral-body {
     font-size: 13px;
     color: rgba(255,255,255,0.5);
     line-height: 1.7;
     max-width: 500px;
   }
-
+ 
   /* ── CONTACT PAGE ── */
   .contact-grid {
     display: grid;
@@ -916,15 +919,15 @@
     gap: 80px;
     align-items: start;
   }
-
+ 
   .contact-form {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
-
+ 
   .form-group { display: flex; flex-direction: column; gap: 6px; }
-
+ 
   .form-label {
     font-size: 9.5px;
     font-weight: 700;
@@ -932,7 +935,7 @@
     text-transform: uppercase;
     color: var(--navy);
   }
-
+ 
   .form-input, .form-select, .form-textarea {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
@@ -945,15 +948,15 @@
     transition: border-color 0.2s;
     width: 100%;
   }
-
+ 
   .form-input:focus, .form-select:focus, .form-textarea:focus {
     border-color: var(--navy);
   }
-
+ 
   .form-textarea { resize: vertical; min-height: 110px; }
-
+ 
   .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-
+ 
   .form-submit {
     background: var(--navy);
     color: #fff;
@@ -968,18 +971,18 @@
     transition: background 0.2s;
     align-self: flex-start;
   }
-
+ 
   .form-submit:hover { background: var(--navy-light); }
-
+ 
   .contact-info { display: flex; flex-direction: column; gap: 0; }
-
+ 
   .contact-info-item {
     padding: 24px 0;
     border-bottom: 1px solid var(--border);
   }
-
+ 
   .contact-info-item:first-child { border-top: 1px solid var(--border); }
-
+ 
   .contact-info-label {
     font-size: 9.5px;
     font-weight: 700;
@@ -988,26 +991,26 @@
     color: var(--gold);
     margin-bottom: 6px;
   }
-
+ 
   .contact-info-value {
     font-size: 14px;
     font-weight: 500;
     color: var(--navy);
   }
-
+ 
   .contact-info-sub {
     font-size: 12px;
     color: var(--text-mid);
     margin-top: 3px;
   }
-
+ 
   .schedule-block {
     background: var(--navy);
     padding: 36px;
     margin-top: 32px;
     position: relative;
   }
-
+ 
   .schedule-block::before {
     content: '';
     position: absolute;
@@ -1015,7 +1018,7 @@
     width: 100%; height: 3px;
     background: var(--gold);
   }
-
+ 
   .schedule-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 24px;
@@ -1023,21 +1026,21 @@
     color: #fff;
     margin-bottom: 10px;
   }
-
+ 
   .schedule-body {
     font-size: 12px;
     color: rgba(255,255,255,0.5);
     line-height: 1.7;
     margin-bottom: 20px;
   }
-
+ 
   /* ── FOOTER ── */
   footer {
     background: var(--navy-deep);
     padding: 60px 0 30px;
     border-top: 1px solid rgba(196,160,0,0.15);
   }
-
+ 
   .footer-grid {
     display: grid;
     grid-template-columns: 1.4fr 1fr 1fr 1fr;
@@ -1046,7 +1049,7 @@
     border-bottom: 1px solid rgba(255,255,255,0.07);
     margin-bottom: 28px;
   }
-
+ 
   .footer-brand-name {
     font-size: 11px;
     font-weight: 800;
@@ -1055,7 +1058,7 @@
     color: #fff;
     margin-bottom: 4px;
   }
-
+ 
   .footer-brand-sub {
     font-size: 9px;
     font-weight: 400;
@@ -1064,7 +1067,7 @@
     text-transform: uppercase;
     margin-bottom: 16px;
   }
-
+ 
   .footer-tagline {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
@@ -1072,13 +1075,13 @@
     color: var(--gold);
     margin-bottom: 16px;
   }
-
+ 
   .footer-disclaimer {
     font-size: 10px;
     color: rgba(255,255,255,0.2);
     line-height: 1.7;
   }
-
+ 
   .footer-col-title {
     font-size: 9.5px;
     font-weight: 700;
@@ -1087,14 +1090,14 @@
     color: rgba(255,255,255,0.4);
     margin-bottom: 16px;
   }
-
+ 
   .footer-links {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-
+ 
   .footer-links li button {
     font-size: 12px;
     font-weight: 500;
@@ -1107,32 +1110,32 @@
     text-align: left;
     transition: color 0.2s;
   }
-
+ 
   .footer-links li button:hover { color: #fff; }
-
+ 
   .footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
+ 
   .footer-copy {
     font-size: 10px;
     color: rgba(255,255,255,0.2);
     letter-spacing: 0.04em;
   }
-
+ 
   .footer-legal {
     font-size: 9.5px;
     color: rgba(255,255,255,0.15);
     letter-spacing: 0.06em;
   }
-
+ 
   /* ── PAGE WRAPPER ── */
   .page-wrapper {
     padding-top: 68px;
   }
-
+ 
   /* ── PAGE HEADER ── */
   .page-header {
     background: var(--navy);
@@ -1140,7 +1143,7 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .page-header::before {
     content: '';
     position: absolute;
@@ -1150,18 +1153,18 @@
       linear-gradient(90deg, rgba(196,160,0,0.04) 1px, transparent 1px);
     background-size: 48px 48px;
   }
-
+ 
   .page-header-content {
     position: relative;
   }
-
+ 
   /* ── TAGLINE STRIP ── */
   .tagline-strip {
     background: var(--gold);
     padding: 18px 0;
     text-align: center;
   }
-
+ 
   .tagline-strip p {
     font-size: 11px;
     font-weight: 700;
@@ -1169,7 +1172,7 @@
     text-transform: uppercase;
     color: var(--navy-deep);
   }
-
+ 
   /* ── GOVERNANCE NOTE ── */
   .governance-note {
     background: rgba(196,160,0,0.08);
@@ -1178,27 +1181,27 @@
     padding: 16px 20px;
     margin-top: 16px;
   }
-
+ 
   .governance-note p {
     font-size: 11px;
     font-weight: 500;
     color: var(--navy);
     line-height: 1.6;
   }
-
+ 
   .governance-note strong { color: var(--gold); }
-
+ 
   /* ── ANIMATIONS ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
-
+ 
   .fade-up { animation: fadeUp 0.6s ease forwards; }
   .fade-up-2 { animation: fadeUp 0.6s 0.1s ease forwards; opacity: 0; }
   .fade-up-3 { animation: fadeUp 0.6s 0.2s ease forwards; opacity: 0; }
   .fade-up-4 { animation: fadeUp 0.6s 0.3s ease forwards; opacity: 0; }
-
+ 
   /* Notification */
   .form-notification {
     background: var(--teal);
@@ -1212,7 +1215,7 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- ══════════════════ NAV ══════════════════ -->
 <nav>
   <div class="nav-brand" onclick="showPage('home')">
@@ -1222,7 +1225,7 @@
       <span>Governance Before Design™</span>
     </div>
   </div>
-
+ 
   <ul class="nav-links">
     <li><button class="active" id="nav-home" onclick="showPage('home')">Home</button></li>
     <li><button id="nav-about" onclick="showPage('about')">About</button></li>
@@ -1231,13 +1234,13 @@
     <li><button id="nav-partners" onclick="showPage('partners')">Partners</button></li>
     <li><button id="nav-contact" onclick="showPage('contact')">Contact</button></li>
   </ul>
-
+ 
   <div class="nav-cta">
     <a href="#" class="btn-login">Client Login</a>
-    <a href="#" class="btn-schedule" onclick="showPage('contact'); return false;">Schedule a Call</a>
+    <a href="https://calendly.com/tj-ecglink" target="_blank" class="btn-schedule">Schedule a Call</a>
   </div>
 </nav>
-
+ 
 <!-- ══════════════════ HOME ══════════════════ -->
 <div id="page-home" class="page active">
   <!-- Hero -->
@@ -1245,7 +1248,7 @@
     <div class="hero-grid"></div>
     <div class="hero-gradient"></div>
     <div class="hero-accent-line"></div>
-
+ 
     <div class="hero-content">
       <div>
         <div class="hero-eyebrow fade-up">
@@ -1256,11 +1259,11 @@
         <p class="hero-subhead fade-up-3">Authority. Oversight. Outcomes.</p>
         <p class="hero-body fade-up-3">Owner-led businesses generate enterprise activity. They rarely generate enterprise value. The gap is governance — and ECG closes it before the transaction table is ever set.</p>
         <div class="hero-actions fade-up-4">
-          <a href="#" class="btn-primary" onclick="showPage('contact'); return false;">Schedule an Assessment</a>
+          <a href="https://calendly.com/tj-ecglink" target="_blank" class="btn-primary">Schedule an Assessment</a>
           <a href="#" class="btn-outline" onclick="showPage('services'); return false;">View Services</a>
         </div>
       </div>
-
+ 
       <div class="hero-card fade-up-3">
         <div class="hero-card-label">ECG Positioning</div>
         <div class="hero-stat">
@@ -1278,7 +1281,7 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- Credibility strip -->
   <div class="credibility-strip">
     <div class="marquee-track">
@@ -1300,12 +1303,12 @@
       <div class="marquee-item">Governance Before Design™</div>
     </div>
   </div>
-
+ 
   <!-- Tagline strip -->
   <div class="tagline-strip">
     <p>Where Advisors Lead Decisions, Not Products</p>
   </div>
-
+ 
   <!-- Value props -->
   <section style="background: var(--bg); padding: 100px 0;">
     <div class="container">
@@ -1315,7 +1318,7 @@
       </div>
       <h2 class="section-title">The Layer Nobody<br>Else Is Building</h2>
       <p class="section-body">Every licensed professional at the transaction table — the M&A advisor, the CPA, the attorney — arrives after the owner has already made the decisions that will cost them the most. ECG arrives first.</p>
-
+ 
       <div class="value-grid">
         <div class="value-card">
           <div class="value-card-accent"></div>
@@ -1338,7 +1341,7 @@
       </div>
     </div>
   </section>
-
+ 
   <!-- CTA band -->
   <section style="background: var(--navy); padding: 80px 0;">
     <div class="container" style="text-align: center;">
@@ -1352,7 +1355,7 @@
       <a href="#" class="btn-primary" onclick="showPage('copilot'); return false;">Access the OSI™</a>
     </div>
   </section>
-
+ 
   <footer>
     <div class="container">
       <div class="footer-grid">
@@ -1394,7 +1397,7 @@
     </div>
   </footer>
 </div>
-
+ 
 <!-- ══════════════════ ABOUT ══════════════════ -->
 <div id="page-about" class="page">
   <div class="page-wrapper">
@@ -1407,7 +1410,7 @@
         <h1 class="section-title light">The Firm That Arrives<br>Before the Advisors Do</h1>
       </div>
     </div>
-
+ 
     <section style="background: var(--bg-white);">
       <div class="container">
         <div class="about-split">
@@ -1418,9 +1421,9 @@
             </div>
             <h2 class="section-title">Why Governance<br>Comes First</h2>
             <p class="section-body">Owner-led businesses are not enterprises without governance — they are enterprises with governance fused to the owner's identity. That fusion is the risk. ECG decouples it.</p>
-
+ 
             <div class="about-statement">"The exit fails before the table is set. It fails when the owner has never been separated from the enterprise as a decision-making structure."</div>
-
+ 
             <div class="about-pillar">
               <div class="about-pillar-title">Non-Licensed by Design</div>
               <div class="about-pillar-body">ECG does not hold M&A licenses, CPA credentials, or legal authority. That is the architecture. Conflict-free means we produce governance intelligence — not licensed conclusions. We engage the specialists. We do not compete with them.</div>
@@ -1434,38 +1437,38 @@
               <div class="about-pillar-body">Five diagnostic instruments. A composite governance score. A 72-question intake architecture. An AI-assisted CoPilot for advisor use. The methodology is the moat — and it is documented, defensible, and delivered consistently.</div>
             </div>
           </div>
-
+ 
           <div>
             <div class="section-eyebrow">
               <div class="section-eyebrow-line"></div>
               <span>Founding Principals</span>
             </div>
             <h2 class="section-title" style="margin-bottom: 28px;">Built By People Who<br>Have Run the Org</h2>
-
+ 
             <div class="team-card">
               <div class="team-name">TJ — Founder & Lead Governance Architect</div>
               <div class="team-title">Executive Capital Governance</div>
               <div class="team-bg">Founder of ECG and Rethink Wealth. A decade building governance frameworks for owner-led enterprises. Licensed producer. Architect of the Owner Glidepath™ methodology and the ECG diagnostic platform.</div>
             </div>
-
+ 
             <div class="team-card" style="--teal: #1D2B49;">
               <div class="team-name">Principal — Operations & Engineering</div>
               <div class="team-title">U.S. Army Corps of Engineers Background</div>
               <div class="team-bg">Infrastructure thinking applied to enterprise architecture. Brings operational systems design, risk frameworks, and project governance from one of the most complex engineering organizations in the world.</div>
             </div>
-
+ 
             <div class="team-card" style="--teal: #C4A000;">
               <div class="team-name">Principal — Technology Governance</div>
               <div class="team-title">Texas Instruments Background</div>
               <div class="team-bg">Enterprise technology governance at scale. Brings HCM readiness assessment, operational fragility identification, and technology-layer due diligence to the ECG diagnostic architecture.</div>
             </div>
-
+ 
             <div class="team-card">
               <div class="team-name">Principal — Strategy & Advisory</div>
               <div class="team-title">Deloitte Background</div>
               <div class="team-bg">Professional services governance and institutional advisory. Brings structured diligence methodology, enterprise risk assessment, and stakeholder communication architecture to the ECG engagement model.</div>
             </div>
-
+ 
             <div class="governance-note">
               <p><strong>Authority Ladder:</strong> ECG consultants operate on a five-level structure — Associate through Fellow — with defined delivery permissions and revenue participation ranges tied to diagnostic authority, not seniority alone.</p>
             </div>
@@ -1473,7 +1476,7 @@
         </div>
       </div>
     </section>
-
+ 
     <footer>
       <div class="container">
         <div class="footer-bottom">
@@ -1484,7 +1487,7 @@
     </footer>
   </div>
 </div>
-
+ 
 <!-- ══════════════════ SERVICES ══════════════════ -->
 <div id="page-services" class="page">
   <div class="page-wrapper">
@@ -1498,7 +1501,7 @@
         <p class="section-body light" style="margin-top: 12px;">ECG's service tiers are not product lines. They are phases of a governance architecture engagement — each one appropriate to where the owner sits in the readiness continuum.</p>
       </div>
     </div>
-
+ 
     <section class="services-bg">
       <div class="container">
         <div class="services-grid">
@@ -1514,7 +1517,7 @@
               <li>Governance gap summary</li>
             </ul>
           </div>
-
+ 
           <div class="service-card">
             <div class="service-type">Ongoing · Retainer-Based</div>
             <div class="service-title">Architecture Retainer</div>
@@ -1527,7 +1530,7 @@
               <li>Owner Glidepath™ phase management</li>
             </ul>
           </div>
-
+ 
           <div class="service-card">
             <div class="service-type">Project-Based · Stage 3</div>
             <div class="service-title">Transaction Prep Sprint</div>
@@ -1541,7 +1544,7 @@
             </ul>
           </div>
         </div>
-
+ 
         <div style="margin-top: 60px; background: rgba(255,255,255,0.04); border: 1px solid rgba(196,160,0,0.2); padding: 36px; position: relative;">
           <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: var(--gold);"></div>
           <div style="font-size: 9px; font-weight: 700; letter-spacing: 0.2em; color: var(--gold); margin-bottom: 12px; text-transform: uppercase;">Governance Boundary</div>
@@ -1549,7 +1552,7 @@
         </div>
       </div>
     </section>
-
+ 
     <footer>
       <div class="container">
         <div class="footer-bottom">
@@ -1560,7 +1563,7 @@
     </footer>
   </div>
 </div>
-
+ 
 <!-- ══════════════════ COPILOT / OSI ══════════════════ -->
 <div id="page-copilot" class="page">
   <div class="page-wrapper">
@@ -1572,14 +1575,14 @@
         </div>
         <h1 class="section-title light">The ECG Diagnostic<br>Architecture</h1>
         <p class="section-body light" style="margin-top: 12px; max-width: 640px;">Five proprietary instruments. A composite governance score. An AI-assisted CoPilot for advisor use. The platform produces readiness intelligence — not opinions. Every score is labeled with a confidence level and data gap notation.</p>
-
+ 
         <div style="display: flex; gap: 14px; margin-top: 36px;">
           <a href="https://app.executivecapitalgovernance.com" target="_blank" class="btn-primary">Launch OSI™ — Stage 1</a>
           <a href="#" class="btn-outline" onclick="showPage('contact'); return false;">Request CoPilot Access</a>
         </div>
       </div>
     </div>
-
+ 
     <section style="background: var(--bg);">
       <div class="container">
         <div class="section-eyebrow">
@@ -1588,7 +1591,7 @@
         </div>
         <h2 class="section-title">Five Instruments.<br>One Composite Score.</h2>
         <p class="section-body">The Enterprise Governance Index™ (EGI™) is the composite output of five sub-instruments. Each instrument scores a domain of enterprise readiness — independently auditable, consistently applied.</p>
-
+ 
         <div class="instruments-grid">
           <div class="instrument-card">
             <div class="instrument-abbr">EFI™</div>
@@ -1611,7 +1614,7 @@
             <div class="instrument-full">Owner Situation Index</div>
           </div>
         </div>
-
+ 
         <div class="flow-diagram">
           <div class="flow-steps">
             <div class="flow-step">
@@ -1635,7 +1638,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 60px;">
           <div style="background: var(--bg-white); border: 1px solid var(--border); padding: 36px; position: relative;">
             <div style="position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--gold);"></div>
@@ -1644,7 +1647,7 @@
             <p style="font-size: 13px; color: var(--text-mid); line-height: 1.75; margin-bottom: 20px;">The public-facing intake tool. 12 minutes. Scores the owner's situational readiness across personal, financial, and enterprise dimensions. Fires results to the ECG CoPilot intake queue via webhook.</p>
             <a href="https://app.executivecapitalgovernance.com" target="_blank" class="btn-primary" style="font-size:10px; padding: 10px 20px;">Launch OSI™</a>
           </div>
-
+ 
           <div style="background: var(--navy); border: 1px solid rgba(255,255,255,0.08); padding: 36px; position: relative;">
             <div style="position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--teal);"></div>
             <div style="font-size: 10px; font-weight: 700; letter-spacing: 0.16em; color: var(--teal); text-transform: uppercase; margin-bottom: 12px;">CoPilot — Stage 2</div>
@@ -1653,13 +1656,13 @@
             <a href="#" class="btn-primary" onclick="showPage('contact'); return false;" style="font-size:10px; padding: 10px 20px;">Request Access</a>
           </div>
         </div>
-
+ 
         <div class="governance-note" style="margin-top: 32px;">
           <p><strong>Platform Boundary:</strong> The ECG CoPilot and all diagnostic instruments produce governance readiness scores and confidence ratings only — not valuations, financial projections, legal opinions, or quality-of-earnings reports. All outputs are advisory instruments for governance use. For advisor governance licensing / methodology use only.</p>
         </div>
       </div>
     </section>
-
+ 
     <footer>
       <div class="container">
         <div class="footer-bottom">
@@ -1670,7 +1673,7 @@
     </footer>
   </div>
 </div>
-
+ 
 <!-- ══════════════════ PARTNERS ══════════════════ -->
 <div id="page-partners" class="page">
   <div class="page-wrapper">
@@ -1684,7 +1687,7 @@
         <p class="section-body light" style="margin-top: 12px;">ECG operates upstream of every licensed specialist at the transaction table. We build the governance foundation your client should have had before they called you — and we send them to you better prepared than any client you've worked with.</p>
       </div>
     </div>
-
+ 
     <section style="background: var(--bg-white);">
       <div class="container">
         <div class="partner-tier">
@@ -1711,7 +1714,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="partner-tier">
           <div class="partner-tier-header">
             <div class="partner-tier-badge" style="background: var(--teal); color: white;">Tier 2 · Near-Term ROI</div>
@@ -1736,7 +1739,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="partner-tier">
           <div class="partner-tier-header">
             <div class="partner-tier-badge" style="background: rgba(29,43,73,0.1); color: var(--navy);">Tier 3 · Transaction Adjacent</div>
@@ -1757,7 +1760,7 @@
             </div>
           </div>
         </div>
-
+ 
         <div class="referral-block">
           <div>
             <div class="referral-title">Become a Referral Partner</div>
@@ -1767,7 +1770,7 @@
         </div>
       </div>
     </section>
-
+ 
     <footer>
       <div class="container">
         <div class="footer-bottom">
@@ -1778,7 +1781,7 @@
     </footer>
   </div>
 </div>
-
+ 
 <!-- ══════════════════ CONTACT ══════════════════ -->
 <div id="page-contact" class="page">
   <div class="page-wrapper">
@@ -1791,7 +1794,7 @@
         <h1 class="section-title light">The First Conversation<br>Is the Diagnostic.</h1>
       </div>
     </div>
-
+ 
     <section style="background: var(--bg-white);">
       <div class="container">
         <div class="contact-grid">
@@ -1801,7 +1804,7 @@
               <span>Intake Form</span>
             </div>
             <h2 class="section-title" style="margin-bottom: 32px;">Tell Us Where<br>You Stand</h2>
-
+ 
             <div class="contact-form">
               <div class="form-row">
                 <div class="form-group">
@@ -1813,17 +1816,17 @@
                   <input type="text" class="form-input" placeholder="Last">
                 </div>
               </div>
-
+ 
               <div class="form-group">
                 <label class="form-label">Business Email</label>
                 <input type="email" class="form-input" placeholder="you@company.com">
               </div>
-
+ 
               <div class="form-group">
                 <label class="form-label">Company Name</label>
                 <input type="text" class="form-input" placeholder="Your company">
               </div>
-
+ 
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label">Annual Revenue Range</label>
@@ -1848,7 +1851,7 @@
                   </select>
                 </div>
               </div>
-
+ 
               <div class="form-group">
                 <label class="form-label">I Am Reaching Out As</label>
                 <select class="form-select">
@@ -1862,17 +1865,17 @@
                   <option>Other Advisor</option>
                 </select>
               </div>
-
+ 
               <div class="form-group">
                 <label class="form-label">What Brings You to ECG</label>
                 <textarea class="form-textarea" placeholder="Briefly describe your situation or what you're trying to solve..."></textarea>
               </div>
-
+ 
               <button class="form-submit" onclick="submitForm()">Submit Inquiry</button>
               <div class="form-notification" id="form-notification">Thank you. An ECG advisor will be in contact within one business day.</div>
             </div>
           </div>
-
+ 
           <div>
             <div class="contact-info">
               <div class="contact-info-item">
@@ -1896,13 +1899,13 @@
                 <div class="contact-info-sub">Existing clients log in via your portal link</div>
               </div>
             </div>
-
+ 
             <div class="schedule-block">
               <div class="schedule-title">Schedule a Discovery Call</div>
               <div class="schedule-body">A 30-minute discovery call is the right first step for most owners and referral partners. No pitch. No proposal. A structured conversation about where governance risk lives in your enterprise — and whether ECG is the right fit.</div>
-              <a href="#" class="btn-primary" style="font-size: 10px; padding: 12px 22px; display: inline-block;">Book a 30-Minute Call</a>
+              <a href="https://calendly.com/tj-ecglink" target="_blank" class="btn-primary" style="font-size: 10px; padding: 12px 22px; display: inline-block;">Book a 30-Minute Call</a>
             </div>
-
+ 
             <div class="governance-note" style="margin-top: 24px;">
               <p><strong>What to expect:</strong> ECG does not sell services on the first call. We diagnose first. If the engagement is appropriate, we will say so — and define exactly what it looks like.</p>
             </div>
@@ -1910,7 +1913,7 @@
         </div>
       </div>
     </section>
-
+ 
     <footer>
       <div class="container">
         <div class="footer-bottom">
@@ -1921,7 +1924,7 @@
     </footer>
   </div>
 </div>
-
+ 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function showPage(id) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
