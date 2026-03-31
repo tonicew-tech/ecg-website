@@ -1922,8 +1922,50 @@
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+<script>
+(function() {
   function showPage(id) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.getElementById('page-' + id).classList.add('active');
-    document.querySelectorAll('.nav-links button').forEach(b => b.classList.remove('activ
+    var pages = document.querySelectorAll('.page');
+    for (var i = 0; i < pages.length; i++) {
+      pages[i].classList.remove('active');
+    }
+    var target = document.getElementById('page-' + id);
+    if (target) { target.classList.add('active'); }
+
+    var btns = document.querySelectorAll('.nav-links button');
+    for (var j = 0; j < btns.length; j++) {
+      btns[j].classList.remove('active');
+    }
+    var navBtn = document.getElementById('nav-' + id);
+    if (navBtn) { navBtn.classList.add('active'); }
+    window.scrollTo(0, 0);
+  }
+
+  window.showPage = showPage;
+
+  window.submitForm = function() {
+    var note = document.getElementById('form-notification');
+    if (note) {
+      note.style.display = 'block';
+      setTimeout(function() { note.style.display = 'none'; }, 5000);
+    }
+  };
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var navIds = ['home','about','services','copilot','partners','contact'];
+    navIds.forEach(function(id) {
+      var btn = document.getElementById('nav-' + id);
+      if (btn) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          showPage(id);
+        });
+      }
+    });
+    showPage('home');
+  });
+})();
+</script>
+</body>
+</html>
